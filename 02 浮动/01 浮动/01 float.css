@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+}
+.one{
+    float: left; /*脱离文档流*/
+    background-color: aquamarine;
+}
+.two{
+    float: right;/*脱离文档流*/
+    background-color: pink;
+    width: 150px;
+}
+.three{
+    background-color: peru;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: gray;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        html,body,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 70px;
+            min-width: 996px;
+            background-color: aquamarine;
+        }
+        .header{
+            width: 80%;
+            height: 70px;
+            background-color: blueviolet;
+            min-width: 996px;
+            margin: 0 auto; /*使用居中*/
+            text-align: center; /*文本居中*/
+        }
+        ul{
+            line-height: 70px;
+
+        }
+        ul li{
+/*            float: left; 脱离文档流，这样就不能使得文本居中
+            list-style-type: none;
+            text-align: center;无效*/
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <ul>
+            <li>列表项目01</li>
+            <li>列表项目02</li>
+            <li>列表项目03</li>
+            <li>列表项目04</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

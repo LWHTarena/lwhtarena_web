@@ -1,0 +1,28 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: dimgrey;
+    /*变成盒子*/
+    display: -webkit-flex;
+
+
+}
+
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    -webkit-flex-grow: 1;
+}
+.two{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    -webkit-flex-grow: 1;
+}
+.three{
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+    -webkit-flex-grow: 1;
+}

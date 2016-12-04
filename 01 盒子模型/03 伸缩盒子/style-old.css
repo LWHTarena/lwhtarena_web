@@ -1,0 +1,31 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: dimgrey;
+    display: -webkit-box; /*变成盒子*/
+    /*-webkit-box-orient: vertical; !*horizontal水平排列*! !*vertical 垂直排列*!*/
+    /*-webkit-box-pack: center;*/
+    /*-webkit-box-align: center;*/
+    -webkit-box-direction: reverse; /*normal 正常 reverse 倒过来*/
+}
+/*div{
+    display: inline-block;
+}*/
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    /*-webkit-box-flex: 3;*/
+}
+.two{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    /*-webkit-box-flex: 2*/
+}
+.three{
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+    /*-webkit-box-flex: 1*/
+}
