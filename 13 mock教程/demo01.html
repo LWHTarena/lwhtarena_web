@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo01</title>
+</head>
+<body>
+<!--模拟拦截ajax请求并返回模拟数据-->
+
+</body>
+<script src="jquery-3.2.0.min.js"></script>
+<script src="mock.js"></script>
+<script src="demo.mock.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url:'http://g.cn',
+    }).done(function (data,status,jqXHR) {
+        $('<pre>').text(JSON.stringify(data, null, 4)).appendTo('body');
+        console.log(JSON.stringify(data,null,4));
+    });
+</script>
+</html>

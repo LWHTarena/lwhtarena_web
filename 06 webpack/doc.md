@@ -99,3 +99,5 @@ wepack 是一个现代的JavaScript应用模块打包器（module bundler），�
 
 其实webpack构建服务器才是正道，如果你使用了webpack，那么尽量使用webpack-dev-server吧，这能大大提高您的工作效率。
 
+命令窗口看到”webpack: bundle is now VALID.”说明服务器已正确启动
+

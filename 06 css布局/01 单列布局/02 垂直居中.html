@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直居中</title>
+<style type="text/css">
+    .parent{ background-color: azure;display: table-cell;vertical-align:middle;height: 20px}
+    .parent1{ background-color: antiquewhite;display: inline-block;vertical-align:middle;line-height: 20px}
+    .parent2{background-color: aqua;position: relative;height: 30px;}
+    .child2{background-color: aquamarine;position: absolute;top: 50%;transform: translate(0,-50%);height: 20px;}
+
+    .parent3{background-color: bisque;display: flex;align-items: center;height: 30px;}
+    .child3{background-color: brown;height: 20px;}
+</style>
+
+</head>
+<body>
+    <div class="parent">
+        parent
+        <div class="child">child</div>
+    </div>
+
+    <div class="parent1">
+        parent1
+        <div class="child1">child</div>
+    </div>
+
+    <div class="parent2">
+        parent2
+        <div class="child2">child2</div>
+    </div>
+
+    <div class="parent3">
+        parent3
+        <div class="child3">child3</div>
+    </div>
+</body>
+</html>

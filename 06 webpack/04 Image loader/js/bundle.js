@@ -49,12 +49,24 @@
 	 */
 
 	var img1 = document.createElement("img");
-	img1.src = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./img/small.jpg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	img1.src = __webpack_require__(1);
 	document.body.appendChild(img1);
 
 	var img2 = document.createElement("img");
-	img2.src = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./img/big.jpg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	img2.src = __webpack_require__(2);
 	document.body.appendChild(img2);
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "05399617c8ae124c8e6464a214734aac.jpg";
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "07acdde77a94305dcba929030e79d015.jpg";
 
 /***/ }
 /******/ ]);

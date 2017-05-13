@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平居中</title>
+<style type="text/css">
+    .parent{display: table-cell;vertical-align: middle;text-align: center;background-color: lavenderblush;width: 500px;height: 60px}
+    .child{display: inline-block;width: 300px;height: 40px;background-color: khaki;}
+
+    .parent1{position: relative;background-color: honeydew;width: 500px;height: 60px}
+    .child1{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 300px;width: 40px;background-color: greenyellow;}
+
+    .parent2{display: flex;justify-content: center;align-items: center;background-color: fuchsia;width: 500px;height: 60px;}
+    .child2{width: 300px;height: 40px;background-color: salmon;}
+</style>
+</head>
+<body>
+
+<div class="parent">
+    patent
+    <div class="child">child</div>
+</div>
+
+<div class="parent1">
+    parnet1
+    <div class="child1">child1</div>
+</div>
+
+<div class="parent2">
+    parent2
+    <div class="child2">child2</div>
+</div>
+
+</body>
+</html>

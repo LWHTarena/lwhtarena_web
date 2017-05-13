@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平居中</title>
+<style type="text/css">
+    .parent{text-align: center; background-color: #00d6b2;}
+    .child{display: inline-block;background-color: #2aabd2;width: 200px;}
+    .parent2{background-color: #4cae4c}
+    .child2{margin: 0 auto; width: 200px;background-color: #8a1f11;}
+    .clearfix{clear: both;height: 10px}
+    .parent3{background-color: #2aabd2;}
+    .child3{display: table;margin: 0 auto;background-color: red;width: 200px;}
+    .parent4{background-color: rebeccapurple;position: relative;height: 50px;}
+    .child4{background-color: indianred;position: absolute;
+        left: 50%;transform: translate(-50%)}
+
+    .parent5{background-color: azure;display: flex;justify-content: center;}
+    .child5{background-color: #8a1f11;width: 200px;}
+
+    .parent6{background-color: antiquewhite;display: flex;}
+    .child6{background-color: #a3be8c;margin: 0 auto; width: 200px;}
+</style>
+</head>
+<body>
+
+    <div class="parent">parent
+        <div class="child">child</div>
+    </div>
+    <div class="clearfix"> </div>
+    <div class="parent2">
+        parent2
+        <div class="child2">child2</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="parent3">
+        parent3
+        <div class="child3">child3</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="parent4">
+        parent4
+        <div class="child4">child4</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="parent5">
+        parent5
+        <div class="child5">child5</div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="parent6">
+        parent6
+        <div class="child6">child6</div>
+    </div>
+</body>
+</html>
