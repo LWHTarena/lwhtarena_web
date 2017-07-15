@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,2BAAM;EACF,aAAa,EAAE,IAAI;AAEvB,yCAAqB;EACjB,cAAc,EAAE,IAAI;EACpB,aAAa,EAAE,IAAI;EACnB,aAAa,EAAE,iBAAiB",
+"sources": ["postlist.component.scss"],
+"names": [],
+"file": "postlist.component.css"
+}

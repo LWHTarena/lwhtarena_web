@@ -1,0 +1,12 @@
+<div class="post-detail-container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h4>{{ post.postTitle }}</h4>
+			<p>{{ post.nickName }} {{ post.postTime | date:'yyyy-MM-dd HH:mm:ss'}} 阅读：{{ post.readTimes }} 评论：{{ post.commentTimes }}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12" [innerHTML]="post.content">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10种水平居中01</title>
+</head>
+
+<style type="text/css">
+    .parent{
+        line-height: 200px;
+    }
+    .child{
+
+    }
+</style>
+
+<body>
+<!--
+    注：为了便于演示，这里给父元素和子元素都设置了宽高，
+    但是实际情况下，这两者的宽高经常都是未知的。
+
+1、父元素设置高度等于行高
+    只在父元素高度已知，并且子元素是文本的情况下适用。
+
+-->
+<div class="parent" style="width: 400px;height: 200px;background:#797099;">
+    <p>父</p>
+    <div class="child" style="width: 200px;height: 100px;background: #eee">
+        <p>孩</p>
+        <p>父元素中子元素水平和垂直居中的实现方法</p>
+    </div>
+</div>
+
+</body>
+</html>

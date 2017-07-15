@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAiB;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,IAAI;EAChB,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CAAC;EAER,6BAAa;IACT,IAAI,EAAE,QAAQ;IACd,UAAU,EAAE,OAAO;IACnB,UAAU,EAAE,IAAI;EAGpB,wCAA0B;IACtB,QAAQ,EAAE,MAAM",
+"sources": ["admin-container.scss"],
+"names": [],
+"file": "admin-container.css"
+}

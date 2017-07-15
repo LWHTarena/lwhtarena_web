@@ -1,0 +1,19 @@
+{
+  "name": "angular-dream-webpack",
+  "version": "1.0.0",
+  "description": "学webpack+angular4",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.js --progress",
+    "test": "karma start",
+    "build":"webpack-dev-server --config config/webpack.dev.js --profile --bail",
+    "webpack":"webpack",
+    "rimraf":"rimraf"
+  },
+  "keywords": [
+    "webpack2",
+    "angular4"
+  ],
+  "author": "李文浩",
+  "license": "ISC"
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,0CAAqB;EACjB,OAAO,EAAE,QAAQ",
+"sources": ["post-table.component.scss"],
+"names": [],
+"file": "post-table.component.css"
+}

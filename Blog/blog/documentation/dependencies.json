@@ -1,0 +1,425 @@
+[
+  {
+    "name": "AppRoutingModule",
+    "file": "__path__/app/app-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forRoot(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 178,
+        "end": 220,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 178,
+          "end": 188,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "pos": 189,
+          "end": 220,
+          "flags": 0,
+          "kind": 176,
+          "elements": [
+            {
+              "pos": 191,
+              "end": 219,
+              "flags": 0,
+              "kind": 180,
+              "expression": {
+                "pos": 191,
+                "end": 211,
+                "flags": 0,
+                "kind": 178,
+                "expression": {
+                  "pos": 191,
+                  "end": 203,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "name": {
+                  "pos": 204,
+                  "end": 211,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 212,
+                  "end": 218,
+                  "flags": 0,
+                  "text": "routes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 221,
+        "end": 247,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 221,
+          "end": 231,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "pos": 232,
+          "end": 247,
+          "flags": 0,
+          "kind": 176,
+          "elements": [
+            {
+              "pos": 234,
+              "end": 246,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 248,
+        "end": 264,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 248,
+          "end": 260,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "pos": 261,
+          "end": 264,
+          "flags": 0,
+          "kind": 176,
+          "elements": []
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppModule",
+    "file": "src/app/app.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "AppComponent",
+        "file": "src/app/app.component.ts",
+        "selector": "app-root",
+        "providers": [],
+        "templateUrl": [
+          "app.component.html"
+        ],
+        "styleUrls": [
+          "app.component.css"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 79,
+            "flags": 0,
+            "kind": 259,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 79,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-root"
+            }
+          },
+          {
+            "pos": 80,
+            "end": 118,
+            "flags": 0,
+            "kind": 259,
+            "name": {
+              "pos": 80,
+              "end": 94,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "pos": 95,
+              "end": 118,
+              "flags": 0,
+              "kind": 9,
+              "text": "./app.component.html"
+            }
+          },
+          {
+            "pos": 119,
+            "end": 156,
+            "flags": 0,
+            "kind": 259,
+            "name": {
+              "pos": 119,
+              "end": 131,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "pos": 132,
+              "end": 156,
+              "flags": 0,
+              "kind": 176,
+              "elements": [
+                {
+                  "pos": 134,
+                  "end": 155,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./app.component.css"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "HomeComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "HttpModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "pos": 312,
+        "end": 370,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 312,
+          "end": 327,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "pos": 328,
+          "end": 370,
+          "flags": 0,
+          "kind": 176,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 330,
+              "end": 347,
+              "flags": 0,
+              "text": "AppComponent"
+            },
+            {
+              "pos": 348,
+              "end": 366,
+              "flags": 0,
+              "text": "HomeComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 371,
+        "end": 439,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 371,
+          "end": 381,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "pos": 382,
+          "end": 439,
+          "flags": 0,
+          "kind": 176,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 384,
+              "end": 402,
+              "flags": 0,
+              "text": "BrowserModule"
+            },
+            {
+              "pos": 403,
+              "end": 419,
+              "flags": 0,
+              "text": "FormsModule"
+            },
+            {
+              "pos": 420,
+              "end": 435,
+              "flags": 0,
+              "text": "HttpModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 440,
+        "end": 456,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 440,
+          "end": 452,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "pos": 453,
+          "end": 456,
+          "flags": 0,
+          "kind": 176,
+          "elements": []
+        }
+      },
+      {
+        "pos": 457,
+        "end": 485,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 457,
+          "end": 469,
+          "flags": 0,
+          "text": "bootstrap"
+        },
+        "initializer": {
+          "pos": 470,
+          "end": 485,
+          "flags": 0,
+          "kind": 176,
+          "elements": [
+            {
+              "pos": 472,
+              "end": 484,
+              "flags": 0,
+              "text": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "HomeModule",
+    "file": "app/home/home.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "SocialChannelComponent"
+      },
+      {
+        "name": "OnlineContactComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 270,
+        "end": 304,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 270,
+          "end": 280,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "pos": 281,
+          "end": 304,
+          "flags": 0,
+          "kind": 176,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 283,
+              "end": 300,
+              "flags": 0,
+              "text": "CommonModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 305,
+        "end": 370,
+        "flags": 0,
+        "kind": 259,
+        "name": {
+          "pos": 305,
+          "end": 320,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "pos": 321,
+          "end": 370,
+          "flags": 0,
+          "kind": 176,
+          "elements": [
+            {
+              "pos": 323,
+              "end": 345,
+              "flags": 0,
+              "text": "SocialChannelComponent"
+            },
+            {
+              "pos": 346,
+              "end": 369,
+              "flags": 0,
+              "text": "OnlineContactComponent"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

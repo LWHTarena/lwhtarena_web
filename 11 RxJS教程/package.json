@@ -1,0 +1,14 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "rxjs教程",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "rxjs"
+  ],
+  "author": "李文浩",
+  "license": "ISC"
+}

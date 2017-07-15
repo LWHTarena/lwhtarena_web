@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,mBAAmB;EACf,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,KAAK",
+"sources": ["amap.component.scss"],
+"names": [],
+"file": "amap.component.css"
+}
