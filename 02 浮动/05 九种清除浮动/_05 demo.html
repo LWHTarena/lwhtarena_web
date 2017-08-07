@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父级div定义 overflow:auto </title>
+    <style type="text/css">
+        .div1 {
+            background: #000080;
+            border: 1px solid red;
+            /*解决代码*/
+            width: 98%;
+            overflow: auto
+        }
+
+        .div2 {
+            background: #800080;
+            border: 1px solid red;
+            height: 100px;
+            margin-top: 10px;
+            width: 98%
+        }
+
+        .left {
+            float: left;
+            width: 20%;
+            height: 200px;
+            background: #DDD
+        }
+
+       .right {
+            float: right;
+            width: 30%;
+            height: 80px;
+            background: #DDD
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="left">Left</div>
+    <div class="right">Right</div>
+</div>
+<div class="div2">
+    　　div2
+</div>
+</body>
+</html>
