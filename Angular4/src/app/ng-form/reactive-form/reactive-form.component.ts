@@ -8,6 +8,8 @@ import { FormArray, FormControl, FormGroup } from '@angular/forms';
 })
 export class ReactiveFormComponent implements OnInit {
 
+  /******
+   **/
   formModel:FormGroup =new FormGroup({
     username:new FormControl("aaa"),
     dateRange:new FormGroup({
