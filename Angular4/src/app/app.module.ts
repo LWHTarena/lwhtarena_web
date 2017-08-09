@@ -9,6 +9,8 @@ import { ReactiveFormComponent } from './ng-form/reactive-form/reactive-form.com
 import { ReactiveRegistComponent } from './ng-form/reactive-regist/reactive-regist.component';
 import { Reactive2FormComponent } from './ng-form/reactive2-form/reactive2-form.component';
 import { ProductComponent } from './product/product.component';
+import { WebSocketComponent } from './web-socket/web-socket.component';
+import { WebSocketService } from './shared/web-socket.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { ProductComponent } from './product/product.component';
     ReactiveFormComponent,
     ReactiveRegistComponent,
     Reactive2FormComponent,
-    ProductComponent
+    ProductComponent,
+    WebSocketComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import { ProductComponent } from './product/product.component';
     HttpModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [WebSocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

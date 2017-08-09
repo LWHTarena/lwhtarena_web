@@ -1,5 +1,5 @@
 import * as express from "express";
-
+import {Server} from 'ws';
 const app =express();
 
 app.get('/',(req,res)=>{
@@ -41,3 +41,19 @@ const products:Product[]=[
 const server =app.listen(8000,'localhost',()=>{
     console.log("服务器已启动，地址是：http：//localhost：8000");
 });
+
+const wsServer =new Server({port:8085});
+wsServer.on("connection",webSocket =>{
+    webSocket.send("这个消息是服务主动推送的");
+    webSocket.on("message",message =>{
+        console.log("接受到的消息："+message);
+    });
+});
+
+setInterval(() =>{
+    if(wsServer.clients){
+        wsServer.clients.forEach(client =>{
+            client.send("这是定时推送");
+        });
+    }
+},2000);
