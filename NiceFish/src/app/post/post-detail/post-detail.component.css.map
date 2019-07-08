@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,sBAAsB;EACrB,aAAa,EAAC,IAAI",
-"sources": ["post-detail.component.scss"],
-"names": [],
-"file": "post-detail.component.css"
-}

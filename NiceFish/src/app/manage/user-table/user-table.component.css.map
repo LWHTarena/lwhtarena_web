@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACI,0CAAqB;EACjB,OAAO,EAAE,QAAQ",
-"sources": ["user-table.component.scss"],
-"names": [],
-"file": "user-table.component.css"
-}
