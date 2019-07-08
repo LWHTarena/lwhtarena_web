@@ -180,5 +180,39 @@ export class AdminModule {}
 @ngrx/router-store提供了五个按特定顺序分派的导航操作。@ngrx/router-store提供的routerReducer使用操作给出的最新路由器状态更新其状态。
 
 + actions的顺序
-    + 
+ + Success case:
+  + ROUTER_REQUEST 在每次导航开始时，路由器将调度ROUTER_REQUEST操作。
+  + ROUTER_NAVIGATION
+  + ROUTER_NAVIGATED 导航成功后，路由器将调度ROUTER_NAVIGATED操作。
+ + Error / Cancel case (with early Navigation Action Timing):
+  + ROUTER_REQUEST
+  + ROUTER_NAVIGATION
+  + ROUTER_CANCEL / ROUTER_ERROR
+ + Error / Cancel case (with late Navigation Action Timing)
+  + ROUTER_REQUEST
+  + ROUTER_CANCEL / ROUTER_ERROR
+ 
+1、
+```typescript
+import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    StoreModule.forRoot({
+      router: routerReducer,
+    }),
+    RouterModule.forRoot([
+      // routes
+    ]),
+    // Connects RouterModule with StoreModule
+    StoreRouterConnectingModule.forRoot(),
+  ],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+ 
+ 
 
