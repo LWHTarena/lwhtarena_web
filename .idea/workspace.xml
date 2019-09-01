@@ -2,104 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6448d244-611a-4820-b3fd-20ca40dfa7f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/actions/auth-api.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/actions/auth.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/actions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/actions/login-page.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/auth-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/auth.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/components/login-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/components/logout-confirmation-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/containers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/containers/login-page.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/containers/login-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/effects/auth.effects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/effects/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/models/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/models/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/reducers/auth.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/reducers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/reducers/login-page.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/services/auth-guard.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/services/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/book.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/books-api.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/collection-api.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/collection-page.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/find-book-page.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/selected-book-page.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/view-book-page.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/books-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/books.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-authors.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-preview-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-preview.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-search.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/collection-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/find-book-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/selected-book-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/view-book-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/effects/book.effects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/effects/collection.effects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/effects/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/guards/book-exists.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/guards/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/models/book.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/models/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/books.reducer.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/books.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/collection.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/search.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/actions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/actions/layout.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/actions/user.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/layout.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/nav-item.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/sidenav.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/toolbar.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/containers/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/containers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/containers/not-found-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/core.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/effects/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/effects/router.effects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/effects/user.effects.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/reducers/layout.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/services/book-storage.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/services/google-books.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/material/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/material/material.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/reducers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/shared/pipes/add-commas.pipe.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/shared/pipes/add-commas.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/shared/pipes/ellipsis.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/shared/pipes/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/docs/img/001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/docs/img/state-management-lifecycle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/docs/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +85,7 @@
       <workItem from="1562689068049" duration="1071000" />
       <workItem from="1562772953803" duration="131000" />
       <workItem from="1567237601472" duration="5844000" />
-      <workItem from="1567331706108" duration="15673000" />
+      <workItem from="1567331706108" duration="16585000" />
     </task>
     <task id="LOCAL-00001" summary="删除文件">
       <created>1562552474396</created>
@@ -198,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567336306135</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="example">
+      <created>1567354040130</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567354040130</updated>
+    </task>
+    <task id="LOCAL-00004" summary="example">
+      <created>1567354138886</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567354138886</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
