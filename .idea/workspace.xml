@@ -2,9 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6448d244-611a-4820-b3fd-20ca40dfa7f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/14 ngrx教程/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/actions/auth-api.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/actions/auth.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/actions/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/actions/login-page.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/auth-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/components/login-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/components/logout-confirmation-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/containers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/containers/login-page.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/containers/login-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/effects/auth.effects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/effects/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/models/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/models/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/reducers/auth.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/reducers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/reducers/login-page.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/services/auth-guard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/auth/services/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/book.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/books-api.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/collection-api.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/collection-page.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/find-book-page.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/selected-book-page.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/actions/view-book-page.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/books-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/books.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-authors.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-preview-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-preview.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/book-search.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/collection-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/find-book-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/selected-book-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/containers/view-book-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/effects/book.effects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/effects/collection.effects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/effects/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/guards/book-exists.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/guards/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/models/book.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/models/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/books.reducer.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/books.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/collection.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/books/reducers/search.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/actions/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/actions/layout.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/actions/user.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/layout.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/nav-item.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/sidenav.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/components/toolbar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/containers/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/containers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/containers/not-found-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/core.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/effects/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/effects/router.effects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/effects/user.effects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/reducers/layout.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/services/book-storage.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/services/google-books.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/core/services/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/material/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/material/material.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/reducers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/shared/pipes/add-commas.pipe.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/shared/pipes/add-commas.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/shared/pipes/ellipsis.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/shared/pipes/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/docs/img/001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14 ngrx教程/docs/img/state-management-lifecycle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08 angular2中文/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/docs/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,39 +107,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/14 ngrx教程/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="610">
-                <caret line="182" column="6" selection-start-line="182" selection-start-column="6" selection-end-line="182" selection-end-column="6" />
-                <folding>
-                  <element signature="e#52#66#0" />
-                  <element signature="e#0#41#0" expanded="true" />
-                  <element signature="e#0#42#0" expanded="true" />
-                  <element signature="e#29#72#0" expanded="true" />
-                  <element signature="e#0#46#0" expanded="true" />
-                  <element signature="e#0#46#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/14 ngrx教程/readme.md" />
-      </list>
-    </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -54,44 +125,24 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lwhtarena_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lwhtarena_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lwhtarena_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lwhtarena_web" type="462c0819:PsiDirectoryNode" />
-              <item name="14 ngrx教程" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1QBIWksQAHtA4LSIzOeySBG5Gpm" />
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/14 ngrx教程/code/src" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WorkSpaces\web\lwhtarena_web\14 ngrx教程\code\src" />
+      <recent name="C:\WorkSpaces\web\lwhtarena_web\14 ngrx教程\docs\img" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -105,6 +156,18 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/14 ngrx教程/code/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -116,6 +179,10 @@
       <option name="presentableId" value="Default" />
       <updated>1562552016001</updated>
       <workItem from="1562552017436" duration="4139000" />
+      <workItem from="1562689068049" duration="1071000" />
+      <workItem from="1562772953803" duration="131000" />
+      <workItem from="1567237601472" duration="5844000" />
+      <workItem from="1567331706108" duration="15673000" />
     </task>
     <task id="LOCAL-00001" summary="删除文件">
       <created>1562552474396</created>
@@ -124,500 +191,55 @@
       <option name="project" value="LOCAL" />
       <updated>1562552474396</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="example">
+      <created>1567336306135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567336306135</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4139000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.38601035" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32872927" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32872927" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.33286715" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.38601035" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32872927" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32872927" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" visible="true" weight="0.33286715" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Blog/blog/src/polyfills.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/polyfills.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/test.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/test.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/main.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/main.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/app.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/app.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/app.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/app.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/app.module.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/app.module.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/index.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/index.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/app.routes.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/app.routes.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/home.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/home.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/home.module.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/home.module.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/home.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/home.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/home.routes.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/home.routes.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/online-contact/online-contact.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/online-contact/online-contact.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/online-contact/online-contact.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/online-contact/online-contact.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/social-channel/social-channel.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/social-channel/social-channel.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/social-channel/social-channel.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/home/social-channel/social-channel.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post.routes.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post.routes.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post.module.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post.module.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/model/post-model.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/model/post-model.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/postlist/postlist.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/postlist/postlist.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/postlist/postlist.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/postlist/postlist.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/postlist/services/postlist.service.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/postlist/services/postlist.service.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/write-post/write-post.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/write-post/write-post.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/write-post/write-post.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/write-post/write-post.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail/post-detail.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail/post-detail.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail/post-detail.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail/post-detail.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail/services/post-detail.service.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail/services/post-detail.service.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail-main/post-detail-main.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail-main/post-detail-main.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail-main/post-detail-main.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/post/post-detail-main/post-detail-main.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user.routes.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user.routes.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user.module.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user.module.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/test.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/test.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/model/user-model.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/model/user-model.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-info/user-info.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-info/user-info.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-main/user-main.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-main/user-main.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/forget-pwd/forget-pwd.service.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/forget-pwd/forget-pwd.service.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-login/user-login.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-login/user-login.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-login/user-login.service.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-login/user-login.service.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/user-profile.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/user-profile.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/user-profile.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/user-profile.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-control.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-control.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/field-base.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/field-base.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/textarea.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/textarea.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/index.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/index.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/image.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/image.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/textbox.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-profile/dynamic-form/form-field/textbox.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-register/user-register.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-register/user-register.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-register/user-register.service.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-register/user-register.service.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-register/user-register.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-register/user-register.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-register/directives/equal-validator.directive.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/user/user-register/directives/equal-validator.directive.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/chart/chart.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/chart/chart.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/chart/chart.component.spec.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/chart/chart.component.spec.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/utils/boolean-pipe.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/utils/boolean-pipe.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/manage.module.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/manage.module.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/auth-guard.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/auth-guard.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/manage.router.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/manage.router.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/sys-param/sys-param.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/sys-param/sys-param.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/post-table/post-table.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/post-table/post-table.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/post-table/services/post-table.service.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/post-table/services/post-table.service.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/user-table/user-table.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/user-table/user-table.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/comment-table/comment-table.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/manage/comment-table/comment-table.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/shared/post.module.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/shared/post.module.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/shared/shared.module.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/shared/shared.module.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/comment/model/comment-model.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/comment/model/comment-model.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/comment/services/comment.service.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/comment/services/comment.service.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/comment/add-comment/add-comment.component.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/comment/add-comment/add-comment.component.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/animations/fly-in.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/app/animations/fly-in.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/environments/environment.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/environments/environment.js" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/environments/environment.prod.js.map" />
-        <option value="$PROJECT_DIR$/Blog/blog/src/environments/environment.prod.js" />
-        <option value="$PROJECT_DIR$/11 RxJS教程/01FP/index.js.map" />
-        <option value="$PROJECT_DIR$/11 RxJS教程/01FP/index.js" />
-        <option value="$PROJECT_DIR$/11 RxJS教程/demo01/index.js" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 基础类型/base.js.map" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 基础类型/base.js" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/extends.js.map" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/extends.js" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/lambda.js.map" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/lambda.js" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/class.js.map" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/class.js" />
         <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/demo01.js.map" />
-        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/demo01.js" />
         <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/demo02.js" />
-        <option value="$PROJECT_DIR$/08 TypeScript/03 声明和解构/demo01.js.map" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/class.js.map" />
+        <option value="$PROJECT_DIR$/11 RxJS教程/01FP/index.js" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/lambda.js" />
         <option value="$PROJECT_DIR$/08 TypeScript/03 声明和解构/demo01.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/main.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/polyfills.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/app_module/app.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/app_module/app.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/app_module/components/page_not_found.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/app_module/components/page_not_found.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/app_module/components/app.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/app_module/components/app.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/auth.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/auth.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/auth/auth-guard.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/auth/auth-guard.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/auth/auth-requirement.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/auth/auth-requirement.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/services/app-session-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/services/app-session-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/services/app-privilege-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/auth_module/services/app-privilege-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/base.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/base.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/pipes/trans-pipe.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/pipes/trans-pipe.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/services/app-config-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/services/app-config-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/services/app-translation-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/services/app-translation-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/services/app-api-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/services/app-api-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-hidden.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-hidden.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-captcha.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-captcha.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-dropdown.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-dropdown.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-textarea.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-textarea.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-validation-messages.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-validation-messages.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-field-base.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-field-base.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/crud-base.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/crud-base.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/crud-with-dialog-base.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/crud-with-dialog-base.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-submit-button.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-submit-button.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-multiselect.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-multiselect.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-text.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-text.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-password.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-password.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-grid.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-grid.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-upload.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/base_module/components/form-upload.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/admin.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/admin.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/components/admin-about-website.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/components/admin-about-website.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/components/admin-about-me.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/components/admin-about-me.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/components/admin-index.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/components/admin-index.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/components/admin-login.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_module/components/admin-login.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/generated.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/generated.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/grid-search-request-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/grid-search-request-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/example-data-input-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/example-data-input-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/role-input-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/role-input-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-type-output-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-type-output-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/tenant-input-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/tenant-input-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/session-info-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/session-info-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/grid-search-column-filter.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/grid-search-column-filter.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/grid-search-response-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/grid-search-response-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/website-settings-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/website-settings-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-output-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-output-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/action-response-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/action-response-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-input-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-input-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/role-output-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/role-output-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-change-password-input-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-change-password-input-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/grid-search-column-filter-match-mode.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/grid-search-column-filter-match-mode.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/plugin-info-output-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/plugin-info-output-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-login-request-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-login-request-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/website-info-output-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/website-info-output-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-upload-avatar-input-dto.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/dtos/user-upload-avatar-input-dto.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/user-profile-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/user-profile-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/session-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/session-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/example-data-manage-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/example-data-manage-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/website-manage-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/website-manage-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/tenant-manage-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/tenant-manage-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/user-manage-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/user-manage-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/captcha-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/captcha-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/role-manage-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/role-manage-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/user-login-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/services/user-login-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/privileges/user-types.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/privileges/user-types.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/privileges/privileges.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/privileges/privileges.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/translations/zh-cn.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/translations/zh-cn.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/translations/en-us.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/translations/en-us.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/translations/index.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/generated_module/translations/index.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/admin_base.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/admin_base.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/services/admin-toast-service.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/services/admin-toast-service.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/components/admin-container.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/components/admin-container.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/navigation/admin-nav-menu.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/navigation/admin-nav-menu.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/navigation/nav-menu-item.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/navigation/nav-menu-item.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/navigation/nav-menu-group.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_base_module/navigation/nav-menu-group.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_roles_module/admin_roles.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_roles_module/admin_roles.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_roles_module/components/admin-role-list.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_roles_module/components/admin-role-list.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_users_module/admin_users.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_users_module/admin_users.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_users_module/components/admin-user-list.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_users_module/components/admin-user-list.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_tenants_module/admin_tenants.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_tenants_module/admin_tenants.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_tenants_module/components/admin-tenant-list.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_tenants_module/components/admin-tenant-list.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_settings_module/admin_settings.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_settings_module/admin_settings.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_settings_module/components/admin-website-settings.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_settings_module/components/admin-website-settings.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_example_datas_module/admin_example_datas.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_example_datas_module/admin_example_datas.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_example_datas_module/components/admin-example-data-list.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_example_datas_module/components/admin-example-data-list.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_scheduled_tasks_module/admin_scheduled_tasks.module.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_scheduled_tasks_module/admin_scheduled_tasks.module.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_scheduled_tasks_module/components/admin-scheduled-task-list.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_scheduled_tasks_module/components/admin-scheduled-task-list.component.js" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_scheduled_tasks_module/components/admin-scheduled-task-log-list.component.js.map" />
-        <option value="$PROJECT_DIR$/zkweb-mvvm-demo/src/modules/admin_scheduled_tasks_module/components/admin-scheduled-task-log-list.component.js" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/lambda.js.map" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 基础类型/base.js.map" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/extends.js" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/extends.js.map" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/class.js" />
+        <option value="$PROJECT_DIR$/11 RxJS教程/demo01/index.js" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 箭头函数/demo01.js" />
+        <option value="$PROJECT_DIR$/08 TypeScript/00 基础类型/base.js" />
+        <option value="$PROJECT_DIR$/11 RxJS教程/01FP/index.js.map" />
+        <option value="$PROJECT_DIR$/08 TypeScript/03 声明和解构/demo01.js.map" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除文件" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Angular4/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Angular4/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Angular4/src/app/web-socket/web-socket.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Angular4/src/app/web-socket/web-socket.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/blog/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/blog/src/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00 html 结构/01 常用标签/02实体.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00 html 结构/01 常用标签/01常用标签.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01 盒子模型/01 标准盒子/01 box.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01 盒子模型/02 怪异盒子/borderbox.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01 盒子模型/03 伸缩盒子/flexbox-new.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01 盒子模型/03 伸缩盒子/flexbox-old.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01 盒子模型/03 伸缩盒子/style-old.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01 盒子模型/03 伸缩盒子/style-new.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03 visibility/01 visibility.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/11 RxJS教程/01FP/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/11 RxJS教程/01FP/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/11 RxJS教程/base/base.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08 angular2中文/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/13 mock教程/demo.mock.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 webpack/04 Image loader/img/big.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 webpack/04 Image loader/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 webpack/doc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/14 ngrx教程/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="610">
-            <caret line="182" column="6" selection-start-line="182" selection-start-column="6" selection-end-line="182" selection-end-column="6" />
-            <folding>
-              <element signature="e#52#66#0" />
-              <element signature="e#0#41#0" expanded="true" />
-              <element signature="e#0#42#0" expanded="true" />
-              <element signature="e#29#72#0" expanded="true" />
-              <element signature="e#0#46#0" expanded="true" />
-              <element signature="e#0#46#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <MESSAGE value="example" />
+    <option name="LAST_COMMIT_MESSAGE" value="example" />
   </component>
 </project>
