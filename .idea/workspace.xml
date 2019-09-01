@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6448d244-611a-4820-b3fd-20ca40dfa7f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/polyfills.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +87,7 @@
       <workItem from="1562689068049" duration="1071000" />
       <workItem from="1562772953803" duration="131000" />
       <workItem from="1567237601472" duration="5844000" />
-      <workItem from="1567331706108" duration="16585000" />
+      <workItem from="1567331706108" duration="17169000" />
     </task>
     <task id="LOCAL-00001" summary="删除文件">
       <created>1562552474396</created>
@@ -115,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567354138886</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="example">
+      <created>1567354906330</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567354906330</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
