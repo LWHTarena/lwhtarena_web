@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mergeAll</title>
+</head>
+<body>
+
+<!--
+mergeAll
+函数签名: mergeAll(concurrent: number): Observable
+收集并订阅所有的 observables 。
+
+在很多情况下，你可以使用只使用单个操作符 mergeMap 来替代！
+译者注：mergeMap === map + mergeAll
+-->
+
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    import { map, mergeAll,take, delay } from 'rxjs/operators';
+    import { of,interval } from 'rxjs';
+
+    /**案例1：使用 promise 来进行 concatAll**/
+    const myPromise = val =>
+        new Promise(resolve => setTimeout(() => resolve(`Result: ${val}`), 2000));
+    // 发出 1,2,3
+    const source = of(1, 2, 3);
+
+    const example = source.pipe(
+        // 将每个值映射成 promise
+        map(val => myPromise(val)),
+        // 发出 source 的结果
+        mergeAll()
+    );
+
+    /*
+      输出:
+      "Result: 1"
+      "Result: 2"
+      "Result: 3"
+    */
+    const subscribe = example.subscribe(val => console.log(val));
+
+    /**案例2：使用并发的参数来进行 mergeAll**/
+    const source = interval(500).pipe(take(5));
+
+    /*
+      interval 每0.5秒发出一个值。这个值会被映射成延迟1秒的 interval 。mergeAll 操作符接收一个可选参数
+      以决定在同一时间有多少个内部 observables 可以被订阅。其余的 observables 会先暂存以等待订阅。
+    */
+    const example = source
+        .pipe(
+            map(val =>
+                source.pipe(
+                    delay(1000),
+                    take(3)
+                )
+            ),
+            mergeAll(2)
+        )
+        .subscribe(val => console.log(val));
+    /*
+      一旦操作符发出了所有值，则 subscription 完成。
+    */
+
+
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>startWith</title>
+</head>
+<body>
+
+<!--
+startWith
+函数签名: startWith(an: Values): Observable
+发出给定的第一个值
+:bulb: BehaviorSubject 也可以从初始值开始！
+-->
+
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    import { startWith,scan } from 'rxjs/operators';
+    import { of,interval } from 'rxjs';
+
+    /**案例1：对数字序列使用 startWith **/
+    // 发出 (1,2,3)
+    const source = of(1, 2, 3);
+    // 从0开始
+    const example = source.pipe(startWith(0));
+    // 输出: 0,1,2,3
+    const subscribe = example.subscribe(val => console.log(val));
+
+    /**案例2： startWith 用作 scan 的初始值**/
+
+    // 发出 ('World!', 'Goodbye', 'World!')
+    const source = of('World!', 'Goodbye', 'World!');
+    // 以 'Hello' 开头，后面接当前字符串
+    const example = source.pipe(
+        startWith('Hello'),
+        scan((acc, curr) => `${acc} ${curr}`)
+    );
+    /*
+      输出:
+      "Hello"
+      "Hello World!"
+      "Hello World! Goodbye"
+      "Hello World! Goodbye World!"
+    */
+    const subscribe = example.subscribe(val => console.log(val));
+
+
+    /**案例3：使用多个值进行 startWith**/
+    // 每1秒发出值
+    const source = interval(1000);
+    // 以 -3, -2, -1 开始
+    const example = source.pipe(startWith(-3, -2, -1));
+    // 输出: -3, -2, -1, 0, 1, 2....
+    const subscribe = example.subscribe(val => console.log(val));
+
+</script>
+</html>

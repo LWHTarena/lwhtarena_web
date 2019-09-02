@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>concat</title>
+</head>
+<body>
+<!--
+函数签名: concat(observables: ...*): Observable
+按照顺序，前一个 observable 完成了再订阅下一个 observable 并发出值。
+
+你可以把 concat 想象成 ATM 机前的长队，下一次交易 (subscription) 不能在前一个交易完成前开始！
+
+此操作符可以既有静态方法，又有实例方法！
+
+如果生产量是首要考虑的，而不需要关心产生值的顺序，那么试试用 merge 来代替！
+-->
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    import { concat,delay, concat } from 'rxjs/operators';
+    import { of,concat,interval } from 'rxjs';
+
+    /**案例1: concat 2个基础的 observables**/
+    // 发出 1,2,3
+    const sourceOne = of(1, 2, 3);
+    // 发出 4,5,6
+    const sourceTwo = of(4, 5, 6);
+    // 先发出 sourceOne 的值，当完成时订阅 sourceTwo
+    const example = sourceOne.pipe(concat(sourceTwo));
+    // 输出: 1,2,3,4,5,6
+    const subscribe = example.subscribe(val =>
+        console.log('Example: Basic concat:', val)
+    );
+
+    /**案例2：concat 作为静态方法**/
+    // 发出 1,2,3
+    const sourceOne = of(1, 2, 3);
+    // 发出 4,5,6
+    const sourceTwo = of(4, 5, 6);
+
+    // 作为静态方法使用
+    const example = concat(sourceOne, sourceTwo);
+    // 输出: 1,2,3,4,5,6
+    const subscribe = example.subscribe(val => console.log(val));
+
+    /**案例3：使用延迟的 souce observable 进行 concat**/
+
+    // 发出 1,2,3
+    const sourceOne = of(1, 2, 3);
+    // 发出 4,5,6
+    const sourceTwo = of(4, 5, 6);
+
+    // 延迟3秒，然后发出
+    const sourceThree = sourceOne.pipe(delay(3000));
+    // sourceTwo 要等待 sourceOne 完成才能订阅
+    const example = sourceThree.pipe(concat(sourceTwo));
+    // 输出: 1,2,3,4,5,6
+    const subscribe = example.subscribe(val =>
+        console.log('Example: Delayed source one:', val)
+    );
+
+    /**案例4：使用不完成的 source observable 进行 concat**/
+    // 当 source 永远不完成时，随后的 observables 永远不会运行
+    const source = concat(interval(1000), of('This', 'Never', 'Runs'));
+    // 输出: 0,1,2,3,4....
+    const subscribe = source.subscribe(val =>
+        console.log(
+            'Example: Source never completes, second observable never runs:',
+            val
+        ))
+    // 输出: 0,1,2,3,4....
+    const subscribe = source.subscribe(val => console.log('Example: Source never completes, second observable never runs:', val));
+
+
+
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>withLatestFrom</title>
+</head>
+<body>
+
+<!--
+withLatestFrom
+函数签名: withLatestFrom(other: Observable, project: Function): Observable
+还提供另一个 observable 的最新值。
+:bulb: 如果你希望每当任意 observable 发出值时各个 observable 的最新值，请尝试 combinelatest！
+-->
+
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    import { withLatestFrom, map } from 'rxjs/operators';
+    import { interval } from 'rxjs';
+
+    /**案例1：发出频率更快的第二个 source 的最新值**/
+    // 每5秒发出值
+    const source = interval(5000);
+    // 每1秒发出值
+    const secondSource = interval(1000);
+    const example = source.pipe(
+        withLatestFrom(secondSource),
+        map(([first, second]) => {
+            return `First Source (5s): ${first} Second Source (1s): ${second}`;
+        })
+    );
+    /*
+      输出:
+      "First Source (5s): 0 Second Source (1s): 4"
+      "First Source (5s): 1 Second Source (1s): 9"
+      "First Source (5s): 2 Second Source (1s): 14"
+      ...
+    */
+    const subscribe = example.subscribe(val => console.log(val));
+
+    /**案例2：第二个 source 发出频率更慢一些**/
+    // 每5秒发出值
+    const source = interval(5000);
+    // 每1秒发出值
+    const secondSource = interval(1000);
+    // withLatestFrom 的 observable 比源 observable 慢
+    const example = secondSource.pipe(
+        // 两个 observable 在发出值前要确保至少都有1个值 (需要等待5秒)
+        withLatestFrom(source),
+        map(([first, second]) => {
+            return `Source (1s): ${first} Latest From (5s): ${second}`;
+        })
+    );
+    /*
+      "Source (1s): 4 Latest From (5s): 0"
+      "Source (1s): 5 Latest From (5s): 0"
+      "Source (1s): 6 Latest From (5s): 0"
+      ...
+    */
+    const subscribe = example.subscribe(val => console.log(val));
+
+</script>
+</html>
