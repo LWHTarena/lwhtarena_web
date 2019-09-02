@@ -10,5 +10,8 @@
     "rxjs"
   ],
   "author": "李文浩",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.5.2"
+  }
 }
