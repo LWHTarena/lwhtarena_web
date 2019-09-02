@@ -12,6 +12,7 @@
   "author": "李文浩",
   "license": "ISC",
   "dependencies": {
+    "requirejs": "^2.3.6",
     "rxjs": "^6.5.2"
   }
 }

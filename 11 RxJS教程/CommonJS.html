@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CommonJS via npm</title>
+</head>
+<body>
+
+<!--
+To install this library for CommonJS (CJS) usage, use the following command:
+`npm install rxjs`
+
+(Note: destructuring available in Node 8+)
+-->
+
+</body>
+<script src="node_modules/requirejs/require.js"></script>
+<script type="text/javascript" >
+const { Observable, Subject, ReplaySubject, from, of, range } = require('rxjs');
+const { map, filter, switchMap } = require('rxjs/operators');
+
+range(1, 200)
+    .pipe(filter(x => x % 2 === 1), map(x => x + x))
+    .subscribe(x => console.log(x));
+</script>
+</html>
