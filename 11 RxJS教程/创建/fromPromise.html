@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fromPromise</title>
+</head>
+<body>
+fromPromise
+函数签名: fromPromise(promise: Promise, scheduler: Scheduler): Observable
+创建由 promise 转换而来的 observable，并发出 promise 的结果。
+
+打平类操作符可以接收 promises 而不需要 observable 包装！
+
+你还可以使用 from 达到同样的效果！
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    const { map, mapTo, filter, scan, every, take, takeLast, takeUntil, takeWhile, tap, delay, delayWhen,
+        skip, skipLast, skipUntil, skipWhile, concat, concatAll, concatMap, concatMapTo, toArray,
+        merge, mergeAll, mergeMap, mergeMapTo, mergeScan, combineAll, combineLatest, race, reduce,
+        zip, zipAll, switchAll, switchMap, switchMapTo, withLatestFrom, buffer, bufferCount, refCount,
+        bufferTime, bufferToggle, bufferWhen, debounce, debounceTime, throttle, throttleTime, throwIfEmpty,
+        timeInterval, timeout, timeoutWith, timestamp, distinct, distinctUntilChanged, distinctUntilKeyChanged,
+        retry, retryWhen, repeat, repeatWhen, finalize, find, findIndex, flatMap, pluck, pairwise, partition,
+        publish, publishBehavior, publishLast, publishReplay, materialize, max, min, multicast,
+        sample, sampleTime, sequenceEqual, share, shareReplay, single, subscribeOn
+    } =rxjs.operators;
+    const {
+        Observable, Subject, asapScheduler, pipe, of, from, interval, range, timer, empty,
+        never, throwError, fromEvent, fromEventPattern, SubscriptionLike, PartialObserver,
+        defer, forkJoin, ReplaySubject, AsyncSubject, asyncScheduler,fromPromise
+    } =rxjs;
+
+    /**案例1：将 promise 转换成 observable 并捕获错误**/
+    // 基于输入来决定是 resolve 还是 reject 的示例 promise
+    const myPromise = willReject => {
+        return new Promise((resolve, reject) => {
+            if (willReject) {
+                reject('Rejected!');
+            }
+            resolve('Resolved!');
+        });
+    };
+    // 先发出 true，然后是 false
+    const source = of(true, false);
+    const example = source.pipe(
+        mergeMap(val =>
+            fromPromise(myPromise(val)).pipe(
+                // 捕获并优雅地处理 reject 的结果
+                catchError(error => of(`Error: ${error}`))
+            )
+        )
+    );
+    // 输出: 'Error: Rejected!', 'Resolved!'
+    const subscribe = example.subscribe(val => console.log(val));
+</script>
+
+</html>

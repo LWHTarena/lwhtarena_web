@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>interval</title>
+</head>
+<body>
+interval
+函数签名: interval(period: number, scheduler: Scheduler): Observable
+基于给定时间间隔发出数字序列。
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { interval } =rxjs;
+
+    /**案例1：每秒发出自增数字**/
+    // 每1秒发出数字序列中的值
+    const source = interval(1000);
+    // 数字: 0,1,2,3,4,5....
+    const subscribe = source.subscribe(val => console.log(val));
+
+</script>
+</html>

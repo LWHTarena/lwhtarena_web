@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>throw</title>
+</head>
+<body>
+throw
+函数签名: throw(error: any, scheduler: Scheduler): Observable
+在订阅上发出错误
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { throwError } =rxjs;
+
+    /**案例1：在订阅上抛出错误**/
+    // 在订阅上使用指定值来发出错误
+    const source = throwError('This is an error!');
+    // 输出: 'Error: This is an error!'
+    const subscribe = source.subscribe({
+        next: val => console.log(val),
+        complete: () => console.log('Complete!'),
+        error: val => console.log(`Error: ${val}`)
+    });
+
+</script>
+</html>
