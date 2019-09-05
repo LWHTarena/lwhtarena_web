@@ -6,8 +6,30 @@
 </head>
 <body>
 <!--如果在完成前没有发出任何通知，那么发出给定的值-->
-
+defaultIfEmpty
+函数签名: defaultIfEmpty(defaultValue: any): Observable
+如果在完成前没有发出任何通知，那么发出给定的值
 </body>
-<script type="text/javascript" src="defaultIfOf.js"></script>
-<script type="text/javascript" src="defaultIfEmpty.js"></script>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { defaultIfEmpty } =rxjs.operators;
+    const { of,empty } =rxjs;
+
+    /**案例1： 没有值的 Observable.of 的默认值**/
+
+    // 当源 observable 为空时，发出 'Observable.of() Empty!'，否则发出源的任意值
+    const exampleOne = of().pipe(defaultIfEmpty('Observable.of() Empty!'));
+    // 输出: 'Observable.of() Empty!'
+    const subscribe = exampleOne.subscribe(val => console.log(val));
+
+
+    /**案例2：Observable.empty 的默认值**/
+    // 当源 observable 为空时，发出 'Observable.empty()!'，否则发出源的任意值
+    const example2 = empty().pipe(defaultIfEmpty('Observable.empty()!'));
+    // 输出: 'Observable.empty()!'
+    const subscribe2 = example2.subscribe(val => console.log(val));
+
+
+</script>
 </html>
