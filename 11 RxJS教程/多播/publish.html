@@ -5,6 +5,47 @@
     <title>Title</title>
 </head>
 <body>
-
+publish
+函数签名: publish() : ConnectableObservable
+共享源 observable 并通过调用 connect 方法使其变成热的。
 </body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+/**在订阅之后调用 observable 的 connect 方法**/
+// RxJS v6+
+const { interval }  =rxjs;
+const { publish, tap } = rxjs.operators;
+
+// 每1秒发出值
+const source = interval(1000);
+const example = source.pipe(
+    // 副作用只会执行1次
+    tap(_ => console.log('Do Something!')),
+    // 不会做任何事直到 connect() 被调用
+    publish()
+);
+
+/*
+  source 不会发出任何值直到 connect() 被调用
+  输出: (5秒后)
+  "Do Something!"
+  "Subscriber One: 0"
+  "Subscriber Two: 0"
+  "Do Something!"
+  "Subscriber One: 1"
+  "Subscriber Two: 1"
+*/
+const subscribe = example.subscribe(val =>
+    console.log(`Subscriber One: ${val}`)
+);
+const subscribeTwo = example.subscribe(val =>
+    console.log(`Subscriber Two: ${val}`)
+);
+
+// 5秒后调用 connect，这会使得 source 开始发出值
+setTimeout(() => {
+    example.connect();
+}, 5000);
+
+</script>
 </html>

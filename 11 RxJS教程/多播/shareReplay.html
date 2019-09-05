@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shareReplay</title>
+</head>
+<body>
+shareReplay
+函数签名: shareReplay(bufferSize?: number, windowTime?: number, scheduler?I IScheduler): Observable
+共享源 observable 并重放指定次数的发出。
+
+为什么使用 shareReplay？
+通常啊，当有副作用或繁重的计算时，你不希望在多个订阅者之间重复执行时，会使用 shareReplay 。 当你知道流的后来订阅者也需要访问之前发出的值，shareReplay 在这种场景下也是有价值的。 这种在订阅过程中重放值的能力是区分 share 和 shareReplay 的关键。
+
+例如，加入你有一个发出最后访问 url 的 observable 。 在第一个示例中，我们将使用 share:
+
+
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { Subject, ReplaySubject } =rxjs;
+    const { pluck, share, shareReplay, tap } =rxjs.operators;
+
+    // 使用 subject 模拟 url 的变化
+    const routeEnd = new Subject<{data: any, url: string}>();
+    // 提取 url 并与后来订阅者共享
+    const lastUrl = routeEnd.pipe(
+        tap(_ => console.log('executed')),
+        pluck('url'),
+        // 默认为所有值，因此我们将其设置为仅保留并重播最后一个值
+        shareReplay(1)
+    );
+    // 起始订阅者是必须的
+    const initialSubscriber = lastUrl.subscribe(console.log)
+    // 模拟路由变化
+    // 输出: 'executed', 'my-path'
+    routeEnd.next({data: {}, url: 'my-path'});
+    // 输出: 'my-path'
+    const lateSubscriber = lastUrl.subscribe(console.log);
+
+</script>
+</html>
