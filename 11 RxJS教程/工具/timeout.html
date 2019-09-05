@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timeout</title>
+</head>
+<body>
+timeout
+函数签名: timeout(due: number, scheduler: Scheduler): Observable
+在指定时间间隔内不发出值就报错
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { of } =rxjs;
+    const { concatMap, timeout, catchError, delay } =rxjs.operators;
+
+    /**2.5秒后超时**/
+    // 模拟请求
+    function makeRequest(timeToDelay) {
+        return of('Request Complete!').pipe(delay(timeToDelay));
+    }
+
+    of(4000, 3000, 2000)
+        .pipe(
+            concatMap(duration =>
+                makeRequest(duration).pipe(
+                    timeout(2500),
+                    catchError(error => of(`Request timed out after: ${duration}`))
+                )
+            )
+        )
+        /*
+          *  "Request timed out after: 4000"
+          *  "Request timed out after: 3000"
+          *  "Request Complete!"
+          */
+        .subscribe(val => console.log(val));
+
+</script>
+</html>

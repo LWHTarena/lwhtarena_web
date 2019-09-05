@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delay</title>
+</head>
+<body>
+delay
+函数签名: delay(delay: number | Date, scheduler: Scheduler): Observable
+根据给定时间延迟发出值。
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { of, merge } =rxjs;
+    const { mapTo, delay } =rxjs.operators;
+
+    /**延迟时间持续增加**/
+    // 发出一项
+    const example = of(null);
+    // 每延迟一次输出便增加1秒延迟时间
+    const message = merge(
+        example.pipe(mapTo('Hello')),
+        example.pipe(
+            mapTo('World!'),
+            delay(1000)
+        ),
+        example.pipe(
+            mapTo('Goodbye'),
+            delay(2000)
+        ),
+        example.pipe(
+            mapTo('World!'),
+            delay(3000)
+        )
+    );
+    // 输出: 'Hello'...'World!'...'Goodbye'...'World!'
+    const subscribe = message.subscribe(val => console.log(val));
+
+</script>
+</html>

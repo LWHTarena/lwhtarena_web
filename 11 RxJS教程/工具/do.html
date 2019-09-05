@@ -5,6 +5,31 @@
     <title>Title</title>
 </head>
 <body>
+do / tap
+函数签名: do(nextOrObserver: function, error: function, complete: function): Observable
+Transparently perform actions or side-effects, such as logging.
+透明地执行操作或副作用，比如打印日志。
 
+If you are using as a pipeable operator, do is known as tap!
 </body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { of } =rxjs;
+    const { tap, map } =rxjs.operators;
+
+    /**使用 do 输出日志**/
+    const source = of(1, 2, 3, 4, 5);
+    // 使用 tap 透明地打印 source 中的值
+    const example = source.pipe(
+        tap(val => console.log(`BEFORE MAP: ${val}`)),
+        map(val => val + 10),
+        tap(val => console.log(`AFTER MAP: ${val}`))
+    );
+
+    // 'tap' 并不转换值
+    // 输出: 11...12...13...14...15
+    const subscribe = example.subscribe(val => console.log(val));
+
+</script>
 </html>
