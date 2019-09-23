@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reduce</title>
+</head>
+<body>
+reduce
+函数签名: reduce(accumulator: function, seed: any): Observable
+将源 observalbe 的值归并为单个值，当源 observable 完成时将这个值发出。
+:bulb: 类似于 Array.prototype.reduce()
+
+:bulb: 如果每次发送时都需要当前的累加值，请使用 scan!
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { of } =rxjs;
+    const { reduce } =rxjs.operators;
+
+    /**示例 1: 数字流的加和**/
+    const source = of(1, 2, 3, 4);
+    const example = source.pipe(reduce((acc, val) => acc + val));
+    // 输出: Sum: 10'
+    const subscribe = example.subscribe(val => console.log('Sum:', val));
+
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>expand</title>
+</head>
+<body>
+expand
+函数签名: expand(project: function, concurrent: number, scheduler: Scheduler): Observable
+递归调用提供的函数
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { interval, of } =rxjs;
+    const { expand, take } =rxjs.operators;
+
+    /**示例 1: 每次调用加1**/
+    // 发出 2
+    const source = of(2);
+    const example = source.pipe(
+        // 递归调用提供的函数
+        expand(val => {
+            // 2,3,4,5,6
+            console.log(`Passed value: ${val}`);
+            // 3,4,5,6
+            return of(1 + val);
+        }),
+        // 用5次
+        take(5)
+    );
+    /*
+        "RESULT: 2"
+        "Passed value: 2"
+        "RESULT: 3"
+        "Passed value: 3"
+        "RESULT: 4"
+        "Passed value: 4"
+        "RESULT: 5"
+        "Passed value: 5"
+        "RESULT: 6"
+        "Passed value: 6"
+    */
+    // 输出: 2,3,4,5,6
+    const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
+
+</script>
+</html>

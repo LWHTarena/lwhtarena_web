@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pluck</title>
+</head>
+<body>
+pluck
+函数签名: pluck(properties: ...args): Observable
+选择属性来发出。
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { from } =rxjs;
+    const { pluck } =rxjs.operators;
+
+    /**示例 1: 提取对象属性**/
+    const source = from([{ name: 'Joe', age: 30 }, { name: 'Sarah', age: 35 }]);
+    // 提取 name 属性
+    const example = source.pipe(pluck('name'));
+    // 输出: "Joe", "Sarah"
+    const subscribe = example.subscribe(val => console.log(val));
+
+    /**示例 2: 提取嵌套的属性**/
+    const source2 = from([
+        { name: 'Joe', age: 30, job: { title: 'Developer', language: 'JavaScript' } },
+        // 当找不到 job 属性的时候会返回 undefined
+        { name: 'Sarah', age: 35 }
+    ]);
+    // 提取 job 中的 title 属性
+    const example2 = source2.pipe(pluck('job', 'title'));
+    // 输出: "Developer" , undefined
+    const subscribe2 = example2.subscribe(val => console.log(val));
+
+
+</script>
+</html>

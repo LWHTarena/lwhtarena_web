@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mapTo</title>
+</head>
+<body>
+mapTo
+函数签名: mapTo(value: any): Observable
+将每个发出值映射成常量。
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { interval,fromEvent} =rxjs;
+    const { mapTo } =rxjs.operators;
+
+    /**示例 1: 将每个发出值映射成字符串**/
+    // 每2秒发出值
+    const source = interval(2000);
+    // 将所有发出值映射成同一个值
+    const example = source.pipe(mapTo('HELLO WORLD!'));
+    // 输出: 'HELLO WORLD!'...'HELLO WORLD!'...'HELLO WORLD!'...
+    const subscribe = example.subscribe(val => console.log(val));
+
+
+    /**示例 2: 将点击映射成字符串**/
+    // 发出每个页面点击
+    const source2 = fromEvent(document, 'click');
+    // 将所有发出值映射成同一个值
+    const example2 = source2.pipe(mapTo('GOODBYE WORLD!'));
+    // 输出: (click)'GOODBYE WORLD!'...
+    const subscribe2 = example2.subscribe(val => console.log(val));
+
+</script>
+</html>

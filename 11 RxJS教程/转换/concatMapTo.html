@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>concatMapTo</title>
+</head>
+<body>
+concatMapTo
+函数签名: concatMapTo(observable: Observable, resultSelector: function): Observable
+当前一个 observable 完成时订阅提供的 observable 并发出值。
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { of, interval } =rxjs;
+    const { concatMapTo, delay, take } =rxjs.operators;
+
+    /**示例 1: 映射成基础的 observable (模拟请求)**/
+    // 每2秒发出值
+    const sampleInterval = interval(500).pipe(take(5));
+    const fakeRequest = of('Network request complete').pipe(delay(3000));
+    // 前一个完成才会订阅下一个
+    const example = sampleInterval.pipe(concatMapTo(fakeRequest));
+    // 结果
+    // 输出: Network request complete...3s...Network request complete'
+    const subscribe = example.subscribe(val => console.log(val));
+
+    /**示例 2: 使用 concatMap 的投射函数**/
+    // 每2秒发出值
+    const interval$ = interval(2000);
+    // 每1秒发出值，共5秒
+    const source = interval(1000).pipe(take(5));
+    /*
+      ***小心***: 像这种情况下，源 observable 以比内部 observable 完成速度更快的速度发出，内存问题可能会出现。
+      (interval 每1秒发出值，source 每5秒钟完成)
+    */
+    // ource 会在5秒后完成， 发出 0,1,2,3,4
+    const example2 = interval$.pipe(
+        concatMapTo(
+            source2,
+            (firstInterval, secondInterval) => `${firstInterval} ${secondInterval}`
+        )
+    );
+    /*
+      输出: 0 0
+            0 1
+            0 2
+            0 3
+            0 4
+            1 0
+            1 1
+            继续...
+
+    */
+    const subscribe2 = example2.subscribe(val => console.log(val));
+
+
+</script>
+</html>
