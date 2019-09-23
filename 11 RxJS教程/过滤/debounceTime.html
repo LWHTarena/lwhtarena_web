@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>debounceTime</title>
+</head>
+<body>
+
+debounceTime
+
+函数签名: debounceTime(dueTime: number, scheduler: Scheduler): Observable
+
+舍弃掉在两次输出之间小于指定时间的发出值
+
+:bulb: 此操作符在诸如预先知道用户的输入频率的场景下很受欢迎！
+
+<input type="text" id="example" />
+<!--<input type="text" id="search" />-->
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { fromEvent, timer } =rxjs;
+    const { debounceTime, map } =rxjs.operators;
+
+    /**示例 1: 基于输入间隔时间的 debounce**/
+    const input = document.getElementById('example');
+
+    // 对于每次键盘敲击，都将映射成当前输入值
+    const example = fromEvent(input, 'keyup').pipe(map(i => i.currentTarget.value));
+
+    // 在两次键盘敲击之间等待0.5秒方才发出当前值，
+    // 并丢弃这0.5秒内的所有其他值
+    const debouncedInput = example.pipe(debounceTime(500));
+
+    // 输出值
+    const subscribe = debouncedInput.subscribe(val => {
+        console.log(`Debounced Input: ${val}`);
+    });
+
+    /**示例 2: 基于输入间隔时间的 debounce**/
+    // // elem ref
+    // const searchBox = document.getElementById('search');
+    //
+    // // streams
+    // const keyup$ = fromEvent(searchBox, 'keyup')
+    //
+    // // wait .5s between keyups to emit current value
+    // keyup$.pipe(
+    //     map((i: any) => i.currentTarget.value),
+    //     debounceTime(500)
+    // ).subscribe(console.log);
+</script>
+</html>

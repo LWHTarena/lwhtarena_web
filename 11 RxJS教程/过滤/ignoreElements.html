@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ignoreElements</title>
+</head>
+<body>
+ignoreElements
+函数签名: ignoreElements(): Observable
+忽略所有通知，除了 complete 和 error 。
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { interval,throwError, of  } =rxjs;
+    const { take, ignoreElements,mergeMap } = rxjs.operators;
+
+    /**示例 1: 忽略源 observable 的所有数据项**/
+    // 每100毫秒发出值
+    const source = interval(100);
+    // 略所有值，只发出 complete
+    const example = source.pipe(
+        take(5),
+        ignoreElements()
+    );
+    // 输出: "COMPLETE!"
+    const subscribe = example.subscribe(
+        val => console.log(`NEXT: ${val}`),
+        val => console.log(`ERROR: ${val}`),
+        () => console.log('COMPLETE!')
+    );
+
+    /**示例 2: 只显示错误**/
+    // 每100毫秒发出值
+    const source2 = interval(100);
+    // 忽略所有值，只发出 error
+    const error = source2.pipe(
+        mergeMap(val => {
+            if (val === 4) {
+                return throwError(`ERROR AT ${val}`);
+            }
+            return of(val);
+        }),
+        ignoreElements()
+    );
+    // 输出: "ERROR: ERROR AT 4"
+    const subscribe = error.subscribe(
+        val => console.log(`NEXT: ${val}`),
+        val => console.log(`ERROR: ${val}`),
+        () => console.log('SECOND COMPLETE!')
+    );
+
+
+</script>
+</html>

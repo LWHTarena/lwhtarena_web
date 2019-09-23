@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sample</title>
+</head>
+<body>
+sample
+函数签名: sample(sampler: Observable): Observable
+当提供的 observable 发出时从源 observable 中取样。
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { interval, zip, from ,fromEvent, merge } =rxjs;
+    const { sample, mapTo  } =rxjs.operators;
+
+    /**示例 1: 每2秒对源 observable 取样**/
+    // 每1秒发出值
+    const source = interval(1000);
+    // 每2秒对源 observable 最新发出的值进行取样
+    const example = source.pipe(sample(interval(2000)));
+    // 输出: 2..4..6..8..
+    const subscribe = example.subscribe(val => console.log(val));
+
+    /**示例 2: 当 interval 发出时对源 observable 取样**/
+    const source = zip(
+        // 发出 'Joe', 'Frank' and 'Bob' in sequence
+        from(['Joe', 'Frank', 'Bob']),
+        // 每2秒发出值
+        interval(2000)
+    );
+    // 每2.5秒对源 observable 最新发出的值进行取样
+    const example = source.pipe(sample(interval(2500)));
+    // 输出: ["Joe", 0]...["Frank", 1]...........
+    const subscribe = example.subscribe(val => console.log(val));
+
+    /**示例 3: 区分拖拽和点击**/
+    const listener = merge(
+        fromEvent(document, 'mousedown').pipe(mapTo(false)),
+        fromEvent(document, 'mousemove').pipe(mapTo(true))
+    )
+        .pipe(sample(fromEvent(document, 'mouseup')))
+        .subscribe(isDragging => {
+            console.log('Were you dragging?', isDragging);
+        });
+
+
+</script>
+</html>

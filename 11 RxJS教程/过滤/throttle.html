@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>throttle</title>
+</head>
+<body>
+throttle
+函数签名: throttle(durationSelector: function(value): Observable | Promise): Observable
+以某个时间间隔为阈值，在 durationSelector 完成前将抑制新值的发出\
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { interval,merge } =rxjs;
+    const { throttle,throttleTime, ignoreElements } =rxjs.operators;
+
+    /**示例 1: 每5秒接收最新值**/
+    // 每1秒发出值
+    const source = interval(1000);
+    /*
+      节流5秒
+      节流结束前发出的最后一个值将从源 observable 中发出
+    */
+    const example = source.pipe(throttleTime(5000));
+    // 输出: 0...6...12
+    const subscribe = example.subscribe(val => console.log(val));
+
+
+    /**示例 2: 对合并的 observable 节流**/
+    const source2 = merge(
+        //  每0.75秒发出值
+        interval(750),
+        // 每1秒发出值
+        interval(1000)
+    );
+    // 在发出值的中间进行节流
+    const example2 = source2.pipe(throttleTime(1200));
+    // 输出: 0...1...4...4...8...7
+    const subscribe2 = example2.subscribe(val => console.log(val));
+
+
+</script>
+</html>

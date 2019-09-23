@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>skipUntil</title>
+</head>
+<body>
+skipUntil
+函数签名: skipUntil(the: Observable): Observable
+跳过源 observable 发出的值，直到提供的 observable 发出值。
+</body>
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+<script type="text/javascript">
+    // RxJS v6+
+    const { interval, timer } = rxjs;
+    const { skipUntil } =rxjs.operators;
+
+    /**示例 1: 跳过值直到另个 observable 发出值**/
+    // 每1秒发出值
+    const source = interval(1000);
+    // 跳过源 observable 发出的值，直到内部 observable 发出值 (6s后)
+    const example = source.pipe(skipUntil(timer(6000)));
+    // 输出: 5...6...7...8........
+    const subscribe = example.subscribe(val => console.log(val));
+
+</script>
+</html>
