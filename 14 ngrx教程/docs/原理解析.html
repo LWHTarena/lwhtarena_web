@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Effects 原理解析</title>
+</head>
+<body>
+编程即逻辑 -- 聊聊 Effects 及在 Angular 中的应用
+
+<pre>
+function main(){
+  // 逻辑部分
+  var a = 2;
+  var b = 10;
+  var result = a * b;
+
+  // 写入 console 的 Effect
+  console.log('result is: ' + result);
+
+  // 操作 DOM 的 Effect
+  var resultElement = document.getElementById('result');
+  resultElement.textContent = result;
+}
+</pre>
+
+<div id="result">对于 DOM 的影响写在这里</div>
+</body>
+<script type="text/javascript">
+    // 程序的主体逻辑完全剥离 Effects，只是对数据做处理
+    function main(){
+        var a = 2;
+        var b = 10;
+        var result = a * b;
+        return {
+            DOM: result,
+            log: result
+        };
+    }
+
+    // 对于 Console 的影响写在这里
+    function logEffect(result){
+        console.log('result is: ' + result);
+    }
+
+    // 对于 DOM 的影响写在这里
+    function domEffect(result){
+        var resultElement = document.getElementById('result');
+        resultElement.textContent = result;
+    }
+
+    // 如何让数据和 effects 连接起来，这是一个粘合剂
+    function run(mainFn){
+        var sink = mainFn();
+        console.log("sink:",sink);
+        logEffect(sink.log);
+        domEffect(sink.DOM);
+    }
+
+    run(main);
+</script>
+</html>
