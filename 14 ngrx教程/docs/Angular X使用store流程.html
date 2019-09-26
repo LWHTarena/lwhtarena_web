@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NgRx/Store 4 + Angular 5使用教程</title>
+</head>
+<style type="text/css">
+    .code { color: #4cae4c;background: #555555}
+</style>
+<body>
+<h1>NgRx/Store 4 + Angular 5使用教程</h1>
+
+<p>
+    @ngrx/store是基于RxJS的状态管理库，其灵感来源于Redux。在NgRx中，状态是由一个包含action和reducer的函数的映射组成的。Reducer函数经由action的分发以及当前或初始的状态而被调用，最后由reducer返回一个不可变的状态。
+</p>
+
+<pre>
+在@ngrx/store中使用到的相关的API。
+
+Action: Action是状态的改变。它描述了某个事件的发生，但是没有指定应用的状态如何改变。
+ActionReducerMap： ActionReducerMap注册了一系列的reducer，在应用中使用StoreModule对它进行配置。
+ActionReducer: 它被用于创建reducer，例如logger。
+MetaReducer: 在应用中使用StoreModule配置的MetaReducer构成了根的meta-reducer。
+StoreModule: StoreModule是@ngrx/storeAPI中的一个模块，它被用来在应用模块中配置reducer。
+createFeatureSelector: 它为状态（state）创建一个feature selector。
+createSelector: 它创建一个selector用于生成一个指定的状态。
+Store: 它提供了Store.select()和Store.dispatch()来与reducer协同工作。Store.select()用于选择一个selector，Store.dispatch()用于向reducer分发action的类型。
+</pre>
+
+<li>1、创建State</li>
+<p>State是一个单独的不可变的数据结构。我们会像如下这样创建state：</p>
+<pre class="code">
+export interface AppState {
+    articleState: ArticleState;
+}
+
+export interface ArticleState {
+    articles: Article[];
+}
+</pre>
+
+<li>2、创建Action类</li>
+<p>NgRx的Action描述了状态的变化。对于每一个action，我们都需要创建一个继承自Action的类，同时定义其type和payload（payload是个可选参数）。</p>
+<pre class="code">
+export const JAVA = 'Java';
+export const  MY_ARTICLES = 'Favorite_Articles';
+
+export class JavaArticlesAction implements Action {
+  readonly type = JAVA;
+}
+export class FavoriteArticlesAction implements Action {
+  readonly type = MY_ARTICLES;
+  constructor(public payload: Article[]) {}
+}
+</pre>
+
+<li>3、创建Reducer</li>
+<p>Reducer描述了任何一个action所对应的应用的state将怎样变化。reducer创建如下：</p>
+<pre class="code">
+export function reducer(state = initialState, action: fromActions.All): ArticleState {
+  switch(action.type) {
+    case fromActions.JAVA: {
+      return {articles: JAVA_ARTICLES};
+    }
+    case fromActions.ANGULAR: {
+      return {articles: ANGULAR_ARTICLES};
+
+    }
+    case fromActions.MY_ARTICLES: {
+      return {articles: action.payload};
+    }
+    default: {
+      return state;
+    }
+  }
+}
+</pre>
+
+<li>4、使用createFeatureSelector和createSelector()</li>
+<p>createFeatureSelector()被用于为任意指定的state创建一个feature selector。</p>
+<pre class="code">
+export const getArticleState = createFeatureSelector<ArticleState>('articleState');
+</pre>
+<p>createSelector()使用feature selector来创建selector。</p>
+<pre class="code">
+export const getArticles = createSelector(
+    getArticleState,
+    (state: ArticleState) => state.articles
+);
+</pre>
+
+<li>5、使用ActionReducerMap</li>
+<p>ActionReducerMap注册了reducer。我们需要在我们配置我们的reducer的地方创建一个 ActionReducerMap的常量。然后在应用模块中使用StoreModule来配置这个常量。</p>
+<pre class="code">
+export const reducers: ActionReducerMap<AppState> = {
+  articleState: articleReducer.reducer
+};
+</pre>
+
+<li>6、使用ActionReducer</li>
+<P>ActionReducer用来创建类似logger的reducer，使用MetaReducer对它进行配置。</P>
+<pre class="code">
+export function logger(reducer: ActionReducer<AppState>): ActionReducer<AppState> {
+  return function(state: AppState, action: any): AppState {
+    console.log('state', state);
+    console.log('action', action);
+    return reducer(state, action);
+  };
+}
+</pre>
+通过使用上面的代码，我们可以在控制台中获取每个action的状态和名称。
+
+<li>7、使用MetaReducer</li>
+<p>MetaReducer由我们所创建的一系列ActionReducer所组成。在应用中使用StoreModule配置的MetaReducer构成了根meta-reducer。@ngrx/store默认使用 combineReducers在创建根meta-reducer。</p>
+<pre class="code">
+    export const metaReducers: MetaReducer<AppState>[] = !environment.production ? [logger] : [];
+</pre>
+
+<li>8、使用StoreModule</li>
+<p>StoreModule是@ngrx/storeAPI中的一个模块，它被用来在应用模块中配置reducer。</p>
+<pre class="code">
+@NgModule({
+  imports: [
+        ---
+    StoreModule.forRoot(reducers, {metaReducers})
+  ]
+  ---
+})
+</pre>
+<li>9、使用Store.select()和Store.dispatch()</li>
+<p>Store.select()和 Store.dispatch()与是reducer配合使用的。Store.select()用于选择一个selector，Store.dispatch()用于向reducer分发action的类型。
+    要使用Store, 在组件中创建一个Observable类型的属性。</p>
+<pre class="code">
+    articles: Observable<Article[]>
+</pre>
+<p >现在使用依赖注入来实例化Store，然后选择一个selector。</p>
+<pre class="code">
+constructor(private store: Store<ArticleState>) {
+    this.articles = store.select(articleReducer.getArticles);
+}
+</pre>
+<p>现在分发这个action以通过reducer改变state。</p>
+<pre class="code">
+showJavaArticles(){
+    this.store.dispatch(new fromActions.JavaArticlesAction());
+}
+</pre>
+
+<a href="https://www.jianshu.com/p/c2d61fc76128">[参考:](https://www.jianshu.com/p/c2d61fc76128)</a>
+</body>
+</html>
