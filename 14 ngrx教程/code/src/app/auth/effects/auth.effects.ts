@@ -24,7 +24,7 @@ export class AuthEffects {
         this.authService.login(auth).pipe(
           map(user => AuthApiActions.loginSuccess({ user })),
           catchError(error => of(AuthApiActions.loginFailure({ error })))
-        )
+        ),
       )
     )
   );

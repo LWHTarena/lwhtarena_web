@@ -15,9 +15,9 @@ export class AuthService {
      * message for the login form.
      */
     if (username !== 'test' && username !== 'ngrx') {
-      return throwError('Invalid username or password');
+      return throwError('用户名或密码无效');
     }
-
+    /*of 按顺序发出任意数量的值*/
     return of({ name: 'User' });
   }
 

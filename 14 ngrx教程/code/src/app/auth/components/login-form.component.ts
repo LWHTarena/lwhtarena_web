@@ -36,7 +36,7 @@ import { Credentials } from '../../auth/models';
           </p>
 
           <p class="loginButtons">
-            <button type="submit" mat-button>Login</button>
+            <button type="submit" mat-button>登录</button>
           </p>
         </form>
       </mat-card-content>
@@ -88,6 +88,12 @@ export class LoginFormComponent implements OnInit {
 
   @Input() errorMessage: string | null;
 
+  /**
+   * 注意：现在的场景是这样的，界面是由N多个组件组成的，如果一个组件中修改了接口的内容，其他组件
+   * 需要调接口刷新数据，那么就用到了EventEmitter
+   *
+   * 其实就是EventEmitter的两个方法，emit(),subscribe()发射和接收；
+   * **/
   @Output() submitted = new EventEmitter<Credentials>();
 
   form: FormGroup = new FormGroup({
@@ -102,6 +108,8 @@ export class LoginFormComponent implements OnInit {
   submit() {
     if (this.form.valid) {
       console.log("this.form.value",this.form.value);
+
+      /**传播发送**/
       this.submitted.emit(this.form.value);
     }
   }
