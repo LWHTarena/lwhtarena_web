@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classes</title>
+</head>
+<body>
+<li>类
+  <ul>对象</ul>
+  <ul>更改调用上下文</ul>
+</li>
+
+<h2>类</h2>
+<p>类是ES6中的一个新特性，用于描述对象的蓝图，使EcmaScript的原型继承模型函数更像一个传统的基于类的语言。</p>
+<pre>
+class Hamburger {
+    constructor() {
+        // 这是一个构造函数
+    }
+    listToppings() {
+        // 这是一个方法
+    }
+}
+</pre>
+
+基于类的传统语言通常保留this这个词来引用类的当前（运行时）实例。在 Javascript 中，this指的是调用上下文，因此可以改变为除对象之外的其他东西。
+
+<h2>对象</h2>
+
+<p>对象是使用new运算符创建的类的实例。当使用点号访问对象上的方法时，this将引用点左边的对象。</p>
+<pre>
+    let burger = new Hamburger();
+    burger.listToppings();
+</pre>
+在上面的代码片段中，每当从Hamburger类中使用this时，它将引用对象burger 。
+
+更改调用上下文
+JavaScript代码可以选择使用以下方法之一将this提供给调用时的方法。
+<pre>
+Function.prototype.call(object [,arg, …])
+Function.prototype.bind(object [,arg, …])
+Function.prototype.apply(object [,argsArray])
+</pre>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展语句和剩余参数</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+    /**扩展语句**/
+    /**1、扩展语句**/
+    const add = (a, b) => a + b;
+    let args = [3, 5];
+    const re1 =add(...args); // same as `add(args[0], args[1])`, or `add.apply(null, args)`
+    console.log("re1",re1);
+
+    /**2、函数不是JavaScript中唯一使用逗号分隔列表的地方 - []现在可以轻松连接：**/
+    let cde = ['c', 'd', 'e'];
+    let scale = ['a', 'b', ...cde, 'f', 'g']; // ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    console.log("scale",scale);
+
+    /**3、同样，对象字面量可以做同样的事情：**/
+    let mapABC  = { a: 5, b: 6, c: 3};
+    let mapABCD = { ...mapABC, d: 7}; // { a: 5, b: 6, c: 3, d: 7 }
+    console.log("mapABCD",mapABCD);
+
+    /**剩余参数**/
+    /**4、剩余参数共享扩展语句的省略号语法，但目的不同。剩余参数用于访问传递给函数不确定数量的参数。 例如：**/
+    function addSimple(a, b) {
+        return a + b;
+    }
+    function _add(...numbers) {
+        return numbers[0] + numbers[1];
+    }
+    let re2 = addSimple(3, 2);  // 5
+    let re3 = _add(3, 2);        // 5
+    console.log("re2",re2);
+    console.log("re3",re3);
+
+    // or in es6 style:
+    const addEs6 = (...numbers) => numbers.reduce((p, c) => p + c, 0);
+    let re4 =addEs6(1, 2, 3);  // 6
+    console.log("re4",re4);
+
+    /**5、
+     * 技术上，JavaScript已经在每个函数上设置了一个arguments 变量（除了箭头函数），但
+     * 是arguments 有很多问题，其中之一就是它在技术上不是数组。
+     *
+     * 剩余参数实际上是数组，它提供对map，filter，reduce等方法的访问。另一个重要的区别是
+     * 剩余参数只包括在函数中没有特别命名的参数，如：
+     * **/
+    function print(a, b, c, ...more) {
+        console.log(more[0]);
+        console.log(arguments[0]);
+    }
+    print(1, 2, 3, 4, 5);
+    // 4
+    // 1
+
+</script>
+</html>
