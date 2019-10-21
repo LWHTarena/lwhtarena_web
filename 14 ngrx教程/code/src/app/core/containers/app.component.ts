@@ -13,10 +13,10 @@ import { LayoutActions } from '../../core/actions';
   template: `
     <bc-layout>
       <bc-sidenav [open]="showSidenav$ | async" (closeMenu)="closeSidenav()">
-        <bc-nav-item (navigate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/" icon="book" hint="View your book collection">
+        <bc-nav-item (navigate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/" icon="book" hint="查看您的藏书">
           My Collection
         </bc-nav-item>
-        <bc-nav-item (navigate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/books/find" icon="search" hint="Find your next book!">
+        <bc-nav-item (navigate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/books/find" icon="search" hint="查找您的下一本书！">
           Browse Books
         </bc-nav-item>
         <bc-nav-item (navigate)="closeSidenav()" *ngIf="!(loggedIn$ | async)">
@@ -27,7 +27,7 @@ import { LayoutActions } from '../../core/actions';
         </bc-nav-item>
       </bc-sidenav>
       <bc-toolbar (openMenu)="openSidenav()">
-        Book Collection
+          藏书
       </bc-toolbar>
 
       <router-outlet></router-outlet>
