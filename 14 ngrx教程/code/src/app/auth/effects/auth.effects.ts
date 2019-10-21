@@ -41,6 +41,7 @@ export class AuthEffects {
   loginRedirect$ = createEffect(
     () =>
       this.actions$.pipe(
+        /**监听对应的信号流，做出相应的响应**/
         ofType(AuthApiActions.loginRedirect, AuthActions.logout),
         tap(authed => {
           this.router.navigate(['/login']);
