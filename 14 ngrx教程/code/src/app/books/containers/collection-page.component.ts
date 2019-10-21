@@ -12,7 +12,7 @@ import * as fromBooks from '../../books/reducers';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <mat-card>
-      <mat-card-title>My Collection</mat-card-title>
+      <mat-card-title>我的收藏</mat-card-title>
     </mat-card>
 
     <bc-book-preview-list [books]="books$ | async"></bc-book-preview-list>

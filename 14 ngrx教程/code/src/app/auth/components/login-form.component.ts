@@ -6,7 +6,7 @@ import { Credentials } from '../../auth/models';
   selector: 'bc-login-form',
   template: `
     <mat-card>
-      <mat-card-title>Login</mat-card-title>
+      <mat-card-title>登录</mat-card-title>
       <mat-card-content>
         <form [formGroup]="form" (ngSubmit)="submit()">
           <p>
@@ -14,7 +14,7 @@ import { Credentials } from '../../auth/models';
               <input
                 type="text"
                 matInput
-                placeholder="Username"
+                placeholder="用户名"
                 formControlName="username"
               />
             </mat-form-field>
@@ -25,7 +25,7 @@ import { Credentials } from '../../auth/models';
               <input
                 type="password"
                 matInput
-                placeholder="Password"
+                placeholder="密码"
                 formControlName="password"
               />
             </mat-form-field>
@@ -101,6 +101,7 @@ export class LoginFormComponent implements OnInit {
 
   submit() {
     if (this.form.valid) {
+      console.log("this.form.value",this.form.value);
       this.submitted.emit(this.form.value);
     }
   }
