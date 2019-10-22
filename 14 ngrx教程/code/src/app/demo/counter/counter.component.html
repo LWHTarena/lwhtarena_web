@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>demo1 入门 @ngrx/store </mat-card-title>
+  <mat-card-content>
+    Current Count: {{ countt$ | async }}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="increment()" color="primary">Increment</button>
+    <button mat-raised-button (click)="decrement()" color="accent">Decrement</button>
+    <button mat-raised-button (click)="reset()" color="warn">Reset Counter</button>
+  </mat-card-actions>
+</mat-card>
