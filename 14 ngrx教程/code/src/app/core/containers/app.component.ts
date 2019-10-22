@@ -19,6 +19,9 @@ import { LayoutActions } from '../../core/actions';
         <bc-nav-item (navigate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/books/find" icon="search" hint="查找您的下一本书！">
             浏览书籍
         </bc-nav-item>
+        <bc-nav-item (navigate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/demos/demo1" icon="book" hint="案例1">
+            案例1
+        </bc-nav-item>
         <bc-nav-item (navigate)="closeSidenav()" *ngIf="!(loggedIn$ | async)">
             注册
         </bc-nav-item>

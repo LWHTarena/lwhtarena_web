@@ -12,6 +12,10 @@ export const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
+    path:'demos',
+    loadChildren: () => import('./demo/demo.module').then(m=> m.DemoModule)
+  },
+  {
     path: '**',
     component: NotFoundPageComponent,
     data: { title: 'Not found' },
