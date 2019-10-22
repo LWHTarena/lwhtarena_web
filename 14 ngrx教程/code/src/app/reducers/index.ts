@@ -40,16 +40,17 @@ export interface State {
  *
  * 我们的状态由action reducer 函数组成，这些reducer 函数在每个分派的action以及当前或初始状态下被调用，并返回新的不可变状态。
  */
-export const ROOT_REDUCERS = new InjectionToken<
-  ActionReducerMap<State, Action>
->('Root reducers token', {
+//To inject the root reducers into your application, use an InjectionToken and a Provider to register the reducers through dependency injection.
+// 要将根reducers注入到您的应用程序中，请使用InjectionToken和Provider通过依赖项注入来注册reducers。
+//Reducers are also injected when composing state through feature modules. https://ngrx.io/guide/store/recipes/injecting
+export const ROOT_REDUCERS = new InjectionToken<ActionReducerMap<State, Action>>('Root reducers token', {
   factory: () => ({
     [fromLayout.layoutFeatureKey]: fromLayout.reducer,
     router: fromRouter.routerReducer,
   }),
 });
 
-// console.log all actions
+//使用Meta Reducer记录所有action
 export function logger(reducer: ActionReducer<State>): ActionReducer<State> {
   return (state, action) => {
     const result = reducer(state, action);
