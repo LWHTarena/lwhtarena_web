@@ -40,6 +40,7 @@ export class FindBookPageComponent {
   }
 
   search(query: string) {
+    console.log('查找书籍,运行顺序01:query=',query)
     this.store.dispatch(FindBookPageActions.searchBooks({ query }));
   }
 }

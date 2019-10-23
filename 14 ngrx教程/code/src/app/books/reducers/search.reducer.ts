@@ -23,6 +23,8 @@ const initialState: State = {
 export const reducer = createReducer(
   initialState,
   on(FindBookPageActions.searchBooks, (state, { query }) => {
+      console.log('查找书籍,运行顺序02:state=',state);
+      console.log('查找书籍,运行顺序02:query=',query);
     return query === ''
       ? {
           ids: [],
