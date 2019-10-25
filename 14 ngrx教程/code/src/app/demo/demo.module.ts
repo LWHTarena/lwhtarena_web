@@ -6,6 +6,7 @@ import { counterReducer } from './reducer/counterReducer';
 import { DemoRoutingModule } from './demo-routing.module';
 import { MaterialModule } from '../material';
 import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,9 +14,10 @@ import { FormComponent } from './form/form.component';
   declarations: [CounterComponent, FormComponent],
   imports: [
     CommonModule,
+    FormsModule,
     MaterialModule,
     DemoRoutingModule,
-    StoreModule.forFeature('countlwh',counterReducer)
+    StoreModule.forFeature('countlwh', counterReducer)
   ]
 })
 export class DemoModule { }
