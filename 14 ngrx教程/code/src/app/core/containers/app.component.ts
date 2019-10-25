@@ -22,6 +22,9 @@ import { LayoutActions } from '../../core/actions';
         <bc-nav-item (navigate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/demos/demo1" icon="book" hint="案例1">
             案例1
         </bc-nav-item>
+        <bc-nav-item (navigate)="closeSidenav()" *ngIf="loggedIn$ | async" routerLink="/demos/form" icon="book" hint="案例2: form">
+            案例2: form
+        </bc-nav-item>
         <bc-nav-item (navigate)="closeSidenav()" *ngIf="!(loggedIn$ | async)">
             注册
         </bc-nav-item>

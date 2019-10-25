@@ -5,11 +5,12 @@ import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './reducer/counterReducer';
 import { DemoRoutingModule } from './demo-routing.module';
 import { MaterialModule } from '../material';
+import { FormComponent } from './form/form.component';
 
 
 
 @NgModule({
-  declarations: [CounterComponent],
+  declarations: [CounterComponent, FormComponent],
   imports: [
     CommonModule,
     MaterialModule,

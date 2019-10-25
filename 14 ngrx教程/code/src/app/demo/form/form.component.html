@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-content>
+    <div>
+      <label>用户名：</label><input #usernameRef matInput placeholder="用户名">
+      <label>密码：</label><input matInput #pwdRef placeholder="密码" type="password"/>
+      <label>信息：</label><input matInput placeholder="信息" />
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="onClick()">信息</button>
+    <button mat-raised-button (click)="onClick2(usernameRef.value)">信息</button>
+    <button mat-raised-button (click)="login(usernameRef.value,pwdRef.value)" color="primary">登录</button>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <div>
+      <label>用户名：</label><input [(ngModel)]="uname" matInput placeholder="用户名">
+      <label>密码：</label><input [(ngModel)]="passpwd" matInput placeholder="密码" type="password"/>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button>Login</button>
+  </mat-card-actions>
+</mat-card>
