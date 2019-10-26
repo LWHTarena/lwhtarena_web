@@ -13,6 +13,11 @@ export class FormComponent implements OnInit {
   uname ='';
   passpwd ='';
 
+  name ='';
+  password ='';
+
+  name2 ='';
+  password2 ='';
   /**
    * 在构造函数中将FormService示例注入到成员变量service
    * 而且我们不需要显示声明成员编service了
@@ -36,5 +41,22 @@ export class FormComponent implements OnInit {
 
   login(username,pwd){
     console.log('auth result is',this.service.loginWithCredentials(username,pwd));
+  }
+
+  /**
+   * input控件上添加了required 这个属性，表明这两个控件为必填属性。
+   * 通过#nameRef="ngModel"类似这样的引用，我们重新又加入了引用，这
+   * 次引用指向了ngModel，为了在模板使用--{{...}}
+   *
+   * *ngIf="nameRef.errors?.required" 意思是当nameRef.errors.required 为true时显示
+   * div标签。那么`？`时干嘛用？因为errors可能为null，如果这个时候调用errors的required
+   * 属性肯定会引发异常。那么`?`就是表明errors可能为空，在其为空就不用调用后面的属性了
+   */
+  vaClick(){
+    console.log("表单验证")
+  }
+
+  onSubmit(formValue){
+    console.log(formValue);
   }
 }

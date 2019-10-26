@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card title="表单传参">
   <mat-card-content>
     <div>
       <label>用户名：</label><input #usernameRef matInput placeholder="用户名">
@@ -12,8 +12,8 @@
     <button mat-raised-button (click)="login(usernameRef.value,pwdRef.value)" color="primary">登录</button>
   </mat-card-actions>
 </mat-card>
-
-<mat-card>
+<hr>
+<mat-card title="双向绑定数据">
   <mat-card-content>
     <div>
       <label>用户名：</label><input [(ngModel)]="uname" matInput placeholder="用户名">
@@ -23,4 +23,39 @@
   <mat-card-actions>
     <button mat-raised-button>Login</button>
   </mat-card-actions>
+</mat-card>
+<hr>
+<mat-card title="表单验证">
+  <mat-card-content>
+    <div>
+      <input type="text" [(ngModel)]="name" #nameRef="ngModel" required minlength="3"/>
+      {{nameRef.valid |json}}
+      {{nameRef.errors |json}}
+      <div *ngIf="nameRef.errors?.required">this is required</div>
+      <div *ngIf="nameRef.errors?.minlength">should be at least 3 charactors</div>
+
+      <input type="password" required [(ngModel)]="password" #passwordRef="ngModel"/>
+      {{passwordRef.valid}}
+      <div *ngIf="passwordRef.errors?.required">this is required</div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-icon-button (click)="vaClick()">校验表单</button>
+  </mat-card-actions>
+</mat-card>
+<hr>
+<mat-card title="表单验证">
+  <mat-card-content>
+    <form #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)">
+      <fieldset ngModelGroup="login">
+        <input name="name2" type="text" [(ngModel)]="name2" #nameRef2="ngModel" required minlength="3"/>
+        <div *ngIf="nameRef2.errors?.required">this is required</div>
+        <div *ngIf="nameRef2.errors?.minlength">should be at least 3 charactors</div>
+
+        <input name="password2" type="password" required [(ngModel)]="password2" #passwordRef2="ngModel"/>
+        <div *ngIf="passwordRef2.errors?.required">this is required</div>
+      </fieldset>
+      <button mat-raised-button type="submit">提交</button>
+    </form>
+  </mat-card-content>
 </mat-card>

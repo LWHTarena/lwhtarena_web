@@ -12,3 +12,6 @@ export class EllipsisPipe implements PipeTransform {
     return withoutHtml;
   }
 }
+/**
+ * 自定义管道
+ * **/
