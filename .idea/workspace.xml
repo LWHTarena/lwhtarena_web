@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6448d244-611a-4820-b3fd-20ca40dfa7f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/1、指令/1、v-text、v-html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/1、指令/2、v-bind.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/1、指令/3、v-model.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/1、指令/4、v-on.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/1、指令/5、v-for.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/1、指令/6、v-if和v-show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/1、指令/7、v-else和v-else-if.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/2、计算属性和侦听器/1、计算属性和侦听器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/2、计算属性和侦听器/2、过滤器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/3、组件化/1、组件化.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/4、生命周期钩子函数/1、生命周期.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15 ES6教程/vue2/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14 ngrx教程/code/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/14 ngrx教程/code/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15 ES6教程/es6/7、模块化.html" beforeDir="false" afterPath="$PROJECT_DIR$/15 ES6教程/es6/7、模块化.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,35 +45,36 @@
     </option>
   </component>
   <component name="ProjectId" id="1QBIWksQAHtA4LSIzOeySBG5Gpm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/14 ngrx教程/code/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/15 ES6教程/vue2" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\webspace\lwhtarena_web\15 ES6教程\vue2" />
+      <recent name="C:\webspace\lwhtarena_web" />
+      <recent name="C:\webspace\lwhtarena_web\11 RxJS教程" />
       <recent name="C:\WorkSpaces\web\lwhtarena_web\14 ngrx教程\code\src" />
       <recent name="C:\WorkSpaces\web\lwhtarena_web\14 ngrx教程\docs\img" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
@@ -88,6 +103,7 @@
       <workItem from="1562772953803" duration="131000" />
       <workItem from="1567237601472" duration="5844000" />
       <workItem from="1567331706108" duration="17169000" />
+      <workItem from="1595756368573" duration="4592000" />
     </task>
     <task id="LOCAL-00001" summary="删除文件">
       <created>1562552474396</created>
@@ -124,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567354906330</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="es6">
+      <created>1595757055656</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595757055656</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,8 +187,16 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="删除文件" />
     <MESSAGE value="example" />
-    <option name="LAST_COMMIT_MESSAGE" value="example" />
+    <MESSAGE value="es6" />
+    <option name="LAST_COMMIT_MESSAGE" value="es6" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1595757032984">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595757032984" />
   </component>
 </project>
